@@ -15,21 +15,21 @@
 
 	<div class="space-y-0 divide-y divide-subtle">
 		{#each creators as creator, i}
-			<a href="/creators/{creator.slug}" class="group flex flex-col sm:flex-row items-start sm:items-center gap-6 py-10 hover:pl-4 transition-all duration-500">
-				<span class="text-xs text-muted font-mono w-8 shrink-0 tracking-wider">{String(i + 1).padStart(2, '0')}</span>
+			<a href="/creators/{creator.slug}" class="group flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 py-8 sm:py-10 hover:pl-2 sm:hover:pl-4 transition-all duration-500">
+				<span class="text-xs text-muted font-mono w-8 shrink-0 tracking-wider hidden sm:block">{String(i + 1).padStart(2, '0')}</span>
 
-				<div class="w-14 h-14 rounded-full bg-subtle border border-rose/20 shrink-0 overflow-hidden">
+				<div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-subtle border border-rose/20 shrink-0 overflow-hidden">
 					{#if creator.image}
 						<img src={creator.image} alt={creator.name} class="w-full h-full object-cover" />
 					{/if}
 				</div>
 
 				<div class="flex-1 min-w-0">
-					<h2 class="text-2xl sm:text-3xl font-extralight group-hover:text-accent-light transition-colors duration-500">{creator.name}</h2>
+					<h2 class="text-2xl sm:text-3xl font-extralight group-hover:text-fg transition-colors duration-500">{creator.name}</h2>
 					<p class="text-muted text-base mt-1 font-light">{creator.tagline}</p>
 				</div>
 
-				<span class="text-xs text-accent uppercase tracking-[0.3em] font-medium shrink-0">{creator.discipline}</span>
+				<span class="text-xs text-accent uppercase tracking-[0.2em] font-medium shrink-0 hidden md:block">{creator.discipline}</span>
 			</a>
 		{/each}
 	</div>

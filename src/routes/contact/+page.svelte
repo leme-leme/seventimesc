@@ -12,7 +12,7 @@
 	<div class="space-y-8">
 		<div>
 			<span class="text-xs text-muted uppercase tracking-[0.3em] font-medium">Email</span>
-			<a href="mailto:hello@seventimesc.nl" class="block text-3xl font-extralight hover:text-accent-light transition-colors duration-500 mt-3">hello@seventimesc.nl</a>
+			<a href="mailto:hello@seventimesc.nl" class="block text-3xl font-extralight hover:text-fg transition-colors duration-500 mt-3">hello@seventimesc.nl</a>
 		</div>
 	</div>
 </section>

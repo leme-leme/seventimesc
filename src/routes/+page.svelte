@@ -11,8 +11,8 @@
 <!-- Hero -->
 <section class="max-w-7xl mx-auto px-6 py-28 sm:py-44">
 	<p class="text-accent text-xs uppercase tracking-[0.4em] font-medium mb-8">Creative Collective</p>
-	<h1 class="text-6xl sm:text-7xl lg:text-[8rem] font-extralight leading-[0.9] tracking-tighter max-w-6xl">
-		Seven<br />Times<FlipC />
+	<h1 class="text-5xl sm:text-7xl lg:text-[7rem] font-extralight leading-[0.9] tracking-tighter">
+		Seven<br /><span class="whitespace-nowrap">Times<FlipC /></span>
 	</h1>
 	<p class="mt-10 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed font-light">
 		A collective of creators with esoteric and specialized skills. We design, direct, build, and shape — across disciplines, without borders.
@@ -29,10 +29,10 @@
 	<div class="max-w-7xl mx-auto px-6 py-20 sm:py-28">
 		<div class="flex items-baseline justify-between mb-14">
 			<h2 class="text-xs uppercase tracking-[0.4em] text-muted font-medium">The Creators</h2>
-			<a href="/creators" class="text-xs text-accent tracking-[0.2em] uppercase hover:text-accent-light transition-colors">View all →</a>
+			<a href="/creators" class="text-xs text-accent tracking-[0.2em] uppercase hover:text-fg transition-colors">View all →</a>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-subtle/50">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-subtle">
 			{#each creators as creator}
 				<a href="/creators/{creator.slug}" class="group bg-bg p-8 sm:p-10 hover:bg-surface transition-colors duration-500">
 					<div class="w-16 h-16 rounded-full bg-subtle border border-rose/20 mb-6 overflow-hidden">
@@ -40,7 +40,7 @@
 							<img src={creator.image} alt={creator.name} class="w-full h-full object-cover" />
 						{/if}
 					</div>
-					<h3 class="text-2xl sm:text-3xl font-extralight mb-2 group-hover:text-accent-light transition-colors duration-500">{creator.name}</h3>
+					<h3 class="text-2xl sm:text-3xl font-extralight mb-2 group-hover:text-fg transition-colors duration-500">{creator.name}</h3>
 					<p class="text-xs text-accent uppercase tracking-[0.3em] font-medium mb-3">{creator.discipline}</p>
 					<p class="text-muted text-base leading-relaxed font-light">{creator.tagline}</p>
 				</a>

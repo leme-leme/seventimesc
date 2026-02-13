@@ -32,7 +32,7 @@
 </script>
 
 <span class="inline-flex items-baseline">
-	<span class="text-accent-light">C</span><span class="flip-wrap"><span class="flip-text" class:flip-out={flipping}>{suffix}</span></span>
+	<span class="text-accent">C</span><span class="flip-wrap"><span class="flip-text" class:flip-out={flipping}>{suffix}</span></span>
 </span>
 
 <style>

@@ -13,7 +13,7 @@
 
 {#if creator}
 	<section class="max-w-5xl mx-auto px-6 py-24 sm:py-36">
-		<a href="/creators" class="text-xs text-muted hover:text-accent-light transition-colors mb-10 inline-block uppercase tracking-[0.2em]">← All creators</a>
+		<a href="/creators" class="text-xs text-muted hover:text-fg transition-colors mb-10 inline-block uppercase tracking-[0.2em]">← All creators</a>
 
 		<div class="flex flex-col sm:flex-row items-start gap-8 mb-16">
 			<div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-subtle border border-rose/20 shrink-0 overflow-hidden">
@@ -36,7 +36,7 @@
 		{#if creator.links?.length}
 			<div class="flex gap-6 mb-20">
 				{#each creator.links as link}
-					<a href={link.url} target="_blank" rel="noopener" class="text-accent hover:text-accent-light underline underline-offset-4 text-sm tracking-wide">
+					<a href={link.url} target="_blank" rel="noopener" class="text-accent hover:text-fg underline underline-offset-4 text-sm tracking-wide">
 						{link.label} ↗
 					</a>
 				{/each}
@@ -61,6 +61,6 @@
 {:else}
 	<section class="max-w-4xl mx-auto px-6 py-24 text-center">
 		<h1 class="text-4xl font-extralight mb-4">Creator not found</h1>
-		<a href="/creators" class="text-accent hover:text-accent-light underline text-sm tracking-wide">← Back to creators</a>
+		<a href="/creators" class="text-accent hover:text-fg underline text-sm tracking-wide">← Back to creators</a>
 	</section>
 {/if}

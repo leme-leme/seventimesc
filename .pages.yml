@@ -3,6 +3,33 @@ media:
   output: /images
 
 content:
+  - name: creators
+    label: Creators
+    path: content/creators
+    type: collection
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: slug
+        label: Slug
+        type: string
+      - name: discipline
+        label: Discipline
+        type: string
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: bio
+        label: Bio
+        type: rich-text
+      - name: image
+        label: Portrait
+        type: image
+      - name: published
+        label: Published
+        type: boolean
+
   - name: projects
     label: Projects
     path: content/projects
@@ -11,30 +38,21 @@ content:
       - name: title
         label: Title
         type: string
+      - name: slug
+        label: Slug
+        type: string
       - name: category
         label: Category
         type: string
       - name: image
-        label: Image
+        label: Cover Image
         type: image
       - name: description
         label: Description
         type: rich-text
-      - name: order
-        label: Order
-        type: number
+      - name: creators
+        label: Creators (slugs)
+        type: string
       - name: published
         label: Published
         type: boolean
-
-  - name: about
-    label: About
-    path: content/about.md
-    type: file
-    fields:
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text

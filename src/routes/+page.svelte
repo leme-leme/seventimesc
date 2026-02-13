@@ -1,5 +1,6 @@
 <script>
 	import { creators, projects } from '$lib/data.js';
+	import FlipC from '$lib/components/FlipC.svelte';
 </script>
 
 <svelte:head>
@@ -10,8 +11,8 @@
 <!-- Hero -->
 <section class="max-w-7xl mx-auto px-6 py-28 sm:py-44">
 	<p class="text-accent text-sm uppercase tracking-[0.3em] font-semibold mb-6">Creative Collective</p>
-	<h1 class="text-6xl sm:text-7xl lg:text-[8rem] font-bold leading-[0.9] tracking-tighter max-w-5xl">
-		Seven<br />Times<span class="text-accent">C</span>
+	<h1 class="text-6xl sm:text-7xl lg:text-[8rem] font-bold leading-[0.9] tracking-tighter max-w-6xl">
+		Seven<br />Times<FlipC />
 	</h1>
 	<p class="mt-10 text-xl sm:text-2xl text-muted max-w-2xl leading-relaxed">
 		A collective of creators with esoteric and specialized skills. We design, direct, build, and shape — across disciplines, without borders.

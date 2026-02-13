@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-bg: #f8f8f6;
+	--color-fg: #1a1a1a;
+	--color-muted: #6b6b6b;
+	--color-subtle: #e8e8e4;
+	--color-accent: #000000;
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background: #1a1a1a;
+	color: #f8f8f6;
+}

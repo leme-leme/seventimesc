@@ -1,0 +1,40 @@
+media:
+  input: static/images
+  output: /images
+
+content:
+  - name: projects
+    label: Projects
+    path: content/projects
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: category
+        label: Category
+        type: string
+      - name: image
+        label: Image
+        type: image
+      - name: description
+        label: Description
+        type: rich-text
+      - name: order
+        label: Order
+        type: number
+      - name: published
+        label: Published
+        type: boolean
+
+  - name: about
+    label: About
+    path: content/about.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text

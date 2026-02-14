@@ -12,7 +12,11 @@
 	--color-blush: #c4a08e;
 	--color-rose: #a07868;
 	--color-warm: #d6cdc2;
+	--color-dark: #1a1715;
+	--color-dark-surface: #242019;
+	--color-olive: #c8c0b0;
 	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-serif: 'Georgia', 'Times New Roman', serif;
 }
 
 html {

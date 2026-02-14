@@ -4,14 +4,12 @@
 	const words = [
 		'Cintha',
 		'Creativity',
-		'Content',
-		'Commission',
-		'Concept',
-		'Craft',
-		'Culture',
-		'Cinema',
-		'Canvas',
-		'Code',
+		'Crafting',
+		'Community',
+		'Curiosity',
+		'Commitment',
+		'Courage',
+		'Consistency',
 	];
 
 	let index = $state(0);

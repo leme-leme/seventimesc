@@ -2,20 +2,26 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-	--color-bg: #f7f4f0;
-	--color-fg: #1a1816;
-	--color-muted: #8a847c;
-	--color-subtle: #ebe6e0;
-	--color-surface: #f0ece6;
-	--color-accent: #c4a882;
-	--color-accent-light: #d9c4a4;
-	--color-blush: #c9a0a0;
-	--color-rose: #a07070;
+	--color-bg: #f5f0eb;
+	--color-fg: #1c1917;
+	--color-muted: #9c958d;
+	--color-subtle: #e8e2db;
+	--color-surface: #eee9e3;
+	--color-accent: #b8976e;
+	--color-accent-light: #d4c0a5;
+	--color-blush: #c4a08e;
+	--color-rose: #a07868;
+	--color-warm: #d6cdc2;
 	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
